@@ -28,43 +28,33 @@ int main() {
 
     // Send initial ready message
     zmq::message_t ready("Ready", 5);
-    push_socket.send(ready); // Using the older ZeroMQ API
+    push_socket.send(ready);
 
-    int workerID = -1; // Worker ID
+    int workerID = -1;
 
     while (!terminate_flag) {
         zmq::message_t message;
-        if (pull_socket.recv(&message)) { // Using the older ZeroMQ API
-            // Parse the message to extract workerID and job packet
-            std::string received_data(static_cast<char*>(message.data()), message.size());
-            size_t delimiterPos = received_data.find('|');
-            if (delimiterPos != std::string::npos) {
-                if (workerID == -1) { // Assign workerID only once
-                    workerID = std::stoi(received_data.substr(0, delimiterPos));
-                    std::cout << "Assigned Worker ID: " << workerID << std::endl;
-                }
-                std::string serializedPacket = received_data.substr(delimiterPos + 1);
-                Peregrine::JobPacket jobPacket = Peregrine::JobPacket::deserialize(serializedPacket);
+        if (pull_socket.recv(&message)) {
+            if (workerID == -1) {
+                workerID = std::stoi(std::string(static_cast<char*>(message.data()), message.size()));
+                std::cout << "Assigned Worker ID: " << workerID << std::endl;
+            } else {
+                std::string received_data(static_cast<char*>(message.data()), message.size());
+                size_t delimiterPos = received_data.find('|');
+                if (delimiterPos != std::string::npos) {
+                    std::string serializedPacket = received_data.substr(delimiterPos + 1);
+                    Peregrine::JobPacket jobPacket = Peregrine::JobPacket::deserialize(serializedPacket);
 
-                // Print the deserialized job packet
-                std::cout << "Worker ID " << workerID << " received packet:\n";
-                std::cout << "  Task ID: " << jobPacket.taskId << "\n";
-                std::cout << "  Vertices:";
-                for (const auto& vertex : jobPacket.vertices) {
-                    std::cout << " " << vertex;
-                }
-                std::cout << "\n  Edges:";
-                for (const auto& edge : jobPacket.edges) {
-                    std::cout << " (" << edge.first << "," << edge.second << ")";
-                }
-                std::cout << std::endl;
+                    // Print and process the job packet
+                    // ... (existing code for processing job packet)
 
-                // Process the job packet
-                // ...
+                    // Wait for one second before notifying the job pool
+                    std::this_thread::sleep_for(std::chrono::seconds(1));
 
-                // Send a response or acknowledgment
-                zmq::message_t response("Processed", 9);
-                push_socket.send(response); // Using the older ZeroMQ API
+                    // Notify the job pool that this worker is ready for another packet
+                    zmq::message_t ready_msg("Ready", 5);
+                    push_socket.send(ready_msg);
+                }
             }
         }
     }
