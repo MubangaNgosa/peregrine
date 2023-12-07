@@ -1,19 +1,20 @@
 #include "zmq.hpp"
 #include <iostream>
 #include <string>
-#include <vector>
+#include <queue>
 #include "../DataGraph.hh"
 #include "createJobPackets.h"
 #include "jobPacket.h"
 
 int main() {
-    // Initialize DataGraph
-    std::string dataGraphPath = "../../data/citeseer"; // Adjust path as necessary
+    // Initialize DataGraph from a specified path
+    std::string dataGraphPath = "../../data/citeseer"; // Adjust this path as necessary
     Peregrine::DataGraph dataGraph(dataGraphPath);
     std::cout << "DataGraph initialized from " << dataGraphPath << std::endl;
 
     // Generate job packets from the DataGraph
     std::vector<Peregrine::JobPacket> jobPackets = Peregrine::createJobPackets(dataGraph);
+    std::cout << "Finished creating " << jobPackets.size() << " job packets." << std::endl;
 
     // Initialize ZeroMQ context and sockets
     zmq::context_t context(1);
@@ -21,28 +22,43 @@ int main() {
     push_socket.bind("tcp://127.0.0.1:5555"); // Bind to PUSH socket for sending job packets
 
     zmq::socket_t pull_socket(context, ZMQ_PULL);
-    pull_socket.bind("tcp://127.0.0.1:5556"); // Bind to PULL socket for receiving worker readiness signals
+    pull_socket.bind("tcp://127.0.0.1:5556"); // Bind to PULL socket for receiving responses
 
-    std::cout << "jobPool is ready, listening on ports 5556 for worker readiness and 5555 for sending job packets." << std::endl;
+    std::cout << "jobPool is ready, listening on ports 5556 for sending and 5555 for responses." << std::endl;
 
-    while (!jobPackets.empty()) {
+    std::queue<int> readyWorkers;
+    int packetNumber = 0;
+    int workerID = 1; // Start with Worker ID 1
+
+    while (!jobPackets.empty() || !readyWorkers.empty()) {
         zmq::message_t worker_ready_msg;
-        // Wait for a worker to signal readiness
-        if (pull_socket.recv(&worker_ready_msg)) {
-            // Get the next job packet
-            Peregrine::JobPacket packet = jobPackets.back();
-            jobPackets.pop_back();
+        if (pull_socket.recv(worker_ready_msg, zmq::recv_flags::dontwait)) {
+            std::string message(static_cast<char*>(worker_ready_msg.data()), worker_ready_msg.size());
 
-            // Serialize and send the job packet
-            std::string serializedPacket = packet.serialize();
+            // Debugging: Print the received message
+            std::cout << "Received message from worker: \"" << message << "\"" << std::endl;
+
+            if (message == "Ready") {
+                readyWorkers.push(workerID++);
+            } else {
+                std::cerr << "Unexpected message received: " << message << std::endl;
+            }
+        }
+
+        if (!jobPackets.empty() && !readyWorkers.empty()) {
+            int assignedWorkerID = readyWorkers.front();
+            readyWorkers.pop();
+
+            // Serialize and send the job packet along with workerID
+            std::string serializedPacket = std::to_string(assignedWorkerID) + "|" + jobPackets.back().serialize();
             zmq::message_t job_msg(serializedPacket.begin(), serializedPacket.end());
             push_socket.send(job_msg, zmq::send_flags::none);
+            jobPackets.pop_back(); // Remove the packet after sending
 
-            std::cout << "Sent a job packet to a ready worker." << std::endl;
+            // Announce after sending each job packet
+            std::cout << "Sent job packet " << ++packetNumber << " to worker " << assignedWorkerID << std::endl;
         }
     }
-
-    // Optionally, handle cleanup or additional logic here
 
     return 0;
 }
