@@ -32,7 +32,7 @@ int main() {
 
     while (!jobPackets.empty() || !readyWorkers.empty()) {
         zmq::message_t worker_ready_msg;
-        if (pull_socket.recv(worker_ready_msg, zmq::recv_flags::dontwait)) {
+        if (pull_socket.recv(&worker_ready_msg)) {
             std::string message(static_cast<char*>(worker_ready_msg.data()), worker_ready_msg.size());
 
             // Debugging: Print the received message
@@ -52,8 +52,10 @@ int main() {
             // Serialize and send the job packet along with workerID
             std::string serializedPacket = std::to_string(assignedWorkerID) + "|" + jobPackets.back().serialize();
             zmq::message_t job_msg(serializedPacket.begin(), serializedPacket.end());
-            push_socket.send(job_msg, zmq::send_flags::none);
-            jobPackets.pop_back(); // Remove the packet after sending
+            push_socket.send(job_msg);
+
+            // Remove the packet after sending
+            jobPackets.pop_back();
 
             // Announce after sending each job packet
             std::cout << "Sent job packet " << ++packetNumber << " to worker " << assignedWorkerID << std::endl;
