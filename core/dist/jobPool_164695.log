@@ -1,0 +1,57 @@
+DataGraph initialized from ../../data/citeseer
+Creating job packets...
+Finished creating 109 job packets.
+Finished creating 109 job packets.
+jobPool is ready, listening on ports 5556 for sending and 5555 for responses.
+Received message from worker: "Ready"
+Sent job packet 1 to worker 1
+Received message from worker: "Ready"
+Sent job packet 2 to worker 2
+Received message from worker: "Ready"
+Sent job packet 3 to worker 3
+Received message from worker: "Ready"
+Sent job packet 4 to worker 4
+Received message from worker: "Ready"
+Sent job packet 5 to worker 5
+Received message from worker: "Ready"
+Sent job packet 6 to worker 6
+Received message from worker: "Ready"
+Sent job packet 7 to worker 7
+Received message from worker: "Ready"
+Sent job packet 8 to worker 8
+Received message from worker: "Ready"
+Sent job packet 9 to worker 9
+Received message from worker: "Ready"
+Sent job packet 10 to worker 10
+Received message from worker: "Ready"
+Sent job packet 11 to worker 11
+Received message from worker: "Ready"
+Sent job packet 12 to worker 12
+Received message from worker: "Ready"
+Sent job packet 13 to worker 13
+Received message from worker: "Ready"
+Sent job packet 14 to worker 14
+Received message from worker: "Ready"
+Sent job packet 15 to worker 15
+Received message from worker: "Ready"
+Sent job packet 16 to worker 16
+Received message from worker: "Ready"
+Sent job packet 17 to worker 17
+Received message from worker: "Ready"
+Sent job packet 18 to worker 18
+Received message from worker: "Ready"
+Sent job packet 19 to worker 19
+Received message from worker: "Ready"
+Sent job packet 20 to worker 20
+Received message from worker: "Ready"
+Sent job packet 21 to worker 21
+Received message from worker: "Ready"
+Sent job packet 22 to worker 22
+Received message from worker: "Ready"
+Sent job packet 23 to worker 23
+Received message from worker: "Ready"
+Sent job packet 24 to worker 24
+Received message from worker: "Ready"
+Sent job packet 25 to worker 25
+Received message from worker: "Ready"
+Sent job packet 26 to worker 26
