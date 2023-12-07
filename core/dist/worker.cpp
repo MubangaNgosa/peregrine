@@ -28,9 +28,7 @@ int main() {
 
     // Send initial ready message
     zmq::message_t ready("Ready", 5);
-    push_socket.send(ready);
-
-    int workerID = -1;
+    push_socket.send(ready.data(), ready.size());
 
     while (!terminate_flag) {
         zmq::message_t message;
@@ -38,12 +36,11 @@ int main() {
             std::string received_data(static_cast<char*>(message.data()), message.size());
             size_t delimiterPos = received_data.find('|');
             if (delimiterPos != std::string::npos) {
-                workerID = std::stoi(received_data.substr(0, delimiterPos));
                 std::string serializedPacket = received_data.substr(delimiterPos + 1);
                 Peregrine::JobPacket jobPacket = Peregrine::JobPacket::deserialize(serializedPacket);
 
-                // Print and process the job packet
-                std::cout << "Worker ID " << workerID << " processing packet:\n";
+                // Debugging: Print the received job packet data
+                std::cout << "Received job packet:\n";
                 std::cout << "  Task ID: " << jobPacket.taskId << "\n";
                 std::cout << "  Vertices:";
                 for (const auto& vertex : jobPacket.vertices) {
@@ -56,14 +53,11 @@ int main() {
                 std::cout << std::endl;
 
                 // Process the job packet
-                // ...
+                // ... (Insert your processing logic here)
 
-                // Wait for one second before notifying the job pool
-                std::this_thread::sleep_for(std::chrono::seconds(1));
-
-                // Notify the job pool that this worker is ready for another packet
+                // Send a readiness signal after processing the job packet
                 zmq::message_t ready_signal("Ready", 5);
-                push_socket.send(ready_signal);
+                push_socket.send(ready_signal.data(), ready_signal.size());
             }
         }
     }
