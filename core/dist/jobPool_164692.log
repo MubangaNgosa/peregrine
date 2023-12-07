@@ -1,0 +1,152 @@
+DataGraph initialized from ../../data/citeseer
+Creating job packets...
+Finished creating 109 job packets.
+Finished creating 109 job packets.
+jobPool is ready, listening on ports 5556 for sending and 5555 for responses.
+Received message from worker: "Ready"
+Sent job packet 1 to worker 1
+Received message from worker: "Ready"
+Sent job packet 2 to worker 2
+Received message from worker: "Ready"
+Sent job packet 3 to worker 3
+Received message from worker: "Ready"
+Sent job packet 4 to worker 4
+Received message from worker: "Ready"
+Sent job packet 5 to worker 5
+Received message from worker: "Ready"
+Sent job packet 6 to worker 6
+Received message from worker: "Ready"
+Sent job packet 7 to worker 7
+Received message from worker: "Ready"
+Sent job packet 8 to worker 8
+Received message from worker: "Ready"
+Sent job packet 9 to worker 9
+Received message from worker: "Ready"
+Sent job packet 10 to worker 10
+Received message from worker: "Ready"
+Sent job packet 11 to worker 11
+Received message from worker: "Ready"
+Sent job packet 12 to worker 12
+Received message from worker: "Ready"
+Sent job packet 13 to worker 13
+Received message from worker: "Ready"
+Sent job packet 14 to worker 14
+Received message from worker: "Ready"
+Sent job packet 15 to worker 15
+Received message from worker: "Ready"
+Sent job packet 16 to worker 16
+Received message from worker: "Ready"
+Sent job packet 17 to worker 17
+Received message from worker: "Ready"
+Sent job packet 18 to worker 18
+Received message from worker: "Ready"
+Sent job packet 19 to worker 19
+Received message from worker: "Ready"
+Sent job packet 20 to worker 20
+Received message from worker: "Ready"
+Sent job packet 21 to worker 21
+Received message from worker: "Ready"
+Sent job packet 22 to worker 22
+Received message from worker: "Ready"
+Sent job packet 23 to worker 23
+Received message from worker: "Ready"
+Sent job packet 24 to worker 24
+Received message from worker: "Ready"
+Sent job packet 25 to worker 25
+Received message from worker: "Ready"
+Sent job packet 26 to worker 26
+Received message from worker: "Ready"
+Sent job packet 27 to worker 27
+Received message from worker: "Ready"
+Sent job packet 28 to worker 28
+Received message from worker: "Ready"
+Sent job packet 29 to worker 29
+Received message from worker: "Ready"
+Sent job packet 30 to worker 30
+Received message from worker: "Ready"
+Sent job packet 31 to worker 31
+Received message from worker: "Ready"
+Sent job packet 32 to worker 32
+Received message from worker: "Ready"
+Sent job packet 33 to worker 33
+Received message from worker: "Ready"
+Sent job packet 34 to worker 34
+Received message from worker: "Ready"
+Sent job packet 35 to worker 35
+Received message from worker: "Ready"
+Sent job packet 36 to worker 36
+Received message from worker: "Ready"
+Sent job packet 37 to worker 37
+Received message from worker: "Ready"
+Sent job packet 38 to worker 38
+Received message from worker: "Ready"
+Sent job packet 39 to worker 39
+Received message from worker: "Ready"
+Sent job packet 40 to worker 40
+Received message from worker: "Ready"
+Sent job packet 41 to worker 41
+Received message from worker: "Ready"
+Sent job packet 42 to worker 42
+Received message from worker: "Ready"
+Sent job packet 43 to worker 43
+Received message from worker: "Ready"
+Sent job packet 44 to worker 44
+Received message from worker: "Ready"
+Sent job packet 45 to worker 45
+Received message from worker: "Ready"
+Sent job packet 46 to worker 46
+Received message from worker: "Ready"
+Sent job packet 47 to worker 47
+Received message from worker: "Ready"
+Sent job packet 48 to worker 48
+Received message from worker: "Ready"
+Sent job packet 49 to worker 49
+Received message from worker: "Ready"
+Sent job packet 50 to worker 50
+Received message from worker: "Ready"
+Sent job packet 51 to worker 51
+Received message from worker: "Ready"
+Sent job packet 52 to worker 52
+Received message from worker: "Ready"
+Sent job packet 53 to worker 53
+Received message from worker: "Ready"
+Sent job packet 54 to worker 54
+Received message from worker: "Ready"
+Sent job packet 55 to worker 55
+Received message from worker: "Ready"
+Sent job packet 56 to worker 56
+Received message from worker: "Ready"
+Sent job packet 57 to worker 57
+Received message from worker: "Ready"
+Sent job packet 58 to worker 58
+Received message from worker: "Ready"
+Sent job packet 59 to worker 59
+Received message from worker: "Ready"
+Sent job packet 60 to worker 60
+Received message from worker: "Ready"
+Sent job packet 61 to worker 61
+Received message from worker: "Ready"
+Sent job packet 62 to worker 62
+Received message from worker: "Ready"
+Sent job packet 63 to worker 63
+Received message from worker: "Ready"
+Sent job packet 64 to worker 64
+Received message from worker: "Ready"
+Sent job packet 65 to worker 65
+Received message from worker: "Ready"
+Sent job packet 66 to worker 66
+Received message from worker: "Ready"
+Sent job packet 67 to worker 67
+Received message from worker: "Ready"
+Sent job packet 68 to worker 68
+Received message from worker: "Ready"
+Sent job packet 69 to worker 69
+Received message from worker: "Ready"
+Sent job packet 70 to worker 70
+Received message from worker: "Ready"
+Sent job packet 71 to worker 71
+Received message from worker: "Ready"
+Sent job packet 72 to worker 72
+Received message from worker: "Ready"
+Sent job packet 73 to worker 73
+slurmstepd-cs-cloud-01: error: *** JOB 164692 ON cs-cloud-01 CANCELLED AT 2023-12-06T17:47:59 DUE TO TIME LIMIT ***
