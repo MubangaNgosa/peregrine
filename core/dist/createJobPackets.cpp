@@ -34,8 +34,6 @@ namespace Peregrine {
 
             jobPackets.push_back(packet);
         }
-
-        std::cout << "Finished creating " << jobPackets.size() << " job packets." << std::endl;
         return jobPackets;
     }
 }
