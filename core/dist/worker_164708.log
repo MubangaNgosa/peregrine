@@ -330,3 +330,5 @@ Worker sent ready message for next job packet.
 Worker received message: terminate
 Terminate signal received. Finishing current tasks.
 Worker terminating.
+slurmstepd-cs-cloud-01: error: *** JOB 164708 ON cs-cloud-01 CANCELLED AT 2023-12-07T18:46:04 DUE TO TIME LIMIT ***
+worker: /usr/include/zmq.hpp:406: zmq::context_t::~context_t(): Assertion `rc == 0' failed.
