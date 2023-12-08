@@ -55,3 +55,76 @@ Received message from worker: "Ready"
 Sent job packet 25 to worker 25
 Received message from worker: "Ready"
 Sent job packet 26 to worker 26
+Received message from worker: "Ready"
+Sent job packet 27 to worker 27
+Received message from worker: "Ready"
+Sent job packet 28 to worker 28
+Received message from worker: "Ready"
+Sent job packet 29 to worker 29
+Received message from worker: "Ready"
+Sent job packet 30 to worker 30
+Received message from worker: "Ready"
+Sent job packet 31 to worker 31
+Received message from worker: "Ready"
+Sent job packet 32 to worker 32
+Received message from worker: "Ready"
+Sent job packet 33 to worker 33
+Received message from worker: "Ready"
+Sent job packet 34 to worker 34
+Received message from worker: "Ready"
+Sent job packet 35 to worker 35
+Received message from worker: "Ready"
+Sent job packet 36 to worker 36
+Received message from worker: "Ready"
+Sent job packet 37 to worker 37
+Received message from worker: "Ready"
+Sent job packet 38 to worker 38
+Received message from worker: "Ready"
+Sent job packet 39 to worker 39
+Received message from worker: "Ready"
+Sent job packet 40 to worker 40
+Received message from worker: "Ready"
+Sent job packet 41 to worker 41
+Received message from worker: "Ready"
+Sent job packet 42 to worker 42
+Received message from worker: "Ready"
+Sent job packet 43 to worker 43
+Received message from worker: "Ready"
+Sent job packet 44 to worker 44
+Received message from worker: "Ready"
+Sent job packet 45 to worker 45
+Received message from worker: "Ready"
+Sent job packet 46 to worker 46
+Received message from worker: "Ready"
+Sent job packet 47 to worker 47
+Received message from worker: "Ready"
+Sent job packet 48 to worker 48
+Received message from worker: "Ready"
+Sent job packet 49 to worker 49
+Received message from worker: "Ready"
+Sent job packet 50 to worker 50
+Received message from worker: "Ready"
+Sent job packet 51 to worker 51
+Received message from worker: "Ready"
+Sent job packet 52 to worker 52
+Received message from worker: "Ready"
+Sent job packet 53 to worker 53
+Received message from worker: "Ready"
+Sent job packet 54 to worker 54
+Received message from worker: "Ready"
+Sent job packet 55 to worker 55
+Received message from worker: "Ready"
+Sent job packet 56 to worker 56
+Received message from worker: "Ready"
+Sent job packet 57 to worker 57
+Received message from worker: "Ready"
+Sent job packet 58 to worker 58
+Received message from worker: "Ready"
+Sent job packet 59 to worker 59
+Received message from worker: "Ready"
+Sent job packet 60 to worker 60
+Received message from worker: "Ready"
+Sent job packet 61 to worker 61
+Received message from worker: "Ready"
+Sent job packet 62 to worker 62
+slurmstepd-cs-cloud-01: error: *** JOB 164695 ON cs-cloud-01 CANCELLED AT 2023-12-07T15:10:34 DUE TO TIME LIMIT ***
