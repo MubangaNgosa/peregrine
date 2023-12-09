@@ -9,14 +9,12 @@ namespace Peregrine {
         std::ostringstream ss;
         ss << taskId;
 
-        // Serialize vertices
         for (const auto& vertex : vertices) {
-            ss << "|v" << vertex;  // Prefix 'v' for vertices
+            ss << "|v" << vertex;
         }
 
-        // Serialize edges
         for (const auto& edge : edges) {
-            ss << "|e" << edge.first << "-" << edge.second;  // Prefix 'e' for edges
+            ss << "|e" << edge.first << "-" << edge.second;
         }
 
         return ss.str();
@@ -28,17 +26,15 @@ namespace Peregrine {
         JobPacket packet;
         std::string token;
 
-        // Deserialize taskId
         std::getline(ss, token, '|');
         packet.taskId = std::stoull(token);
 
-        // Deserialize vertices and edges
         while (std::getline(ss, token, '|')) {
-            if (token[0] == 'v') {  // Vertex
-                token.erase(0, 1);  // Remove 'v' prefix
+            if (token[0] == 'v') {
+                token.erase(0, 1);
                 packet.vertices.push_back(std::stoul(token));
-            } else if (token[0] == 'e') {  // Edge
-                token.erase(0, 1);  // Remove 'e' prefix
+            } else if (token[0] == 'e') {
+                token.erase(0, 1);
                 std::istringstream edgeStream(token);
                 std::string vertex;
                 std::getline(edgeStream, vertex, '-');
@@ -51,5 +47,7 @@ namespace Peregrine {
 
         return packet;
     }
+
+    // Additional functions can be added here if needed
 
 }

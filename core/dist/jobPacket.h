@@ -1,25 +1,24 @@
-#ifndef PEREGRINE_JOBPACKET_H
-#define PEREGRINE_JOBPACKET_H
+#ifndef JOBPACKET_H
+#define JOBPACKET_H
 
-#include <string>
 #include <vector>
+#include <string>
 #include <utility> // For std::pair
 
 namespace Peregrine {
 
     struct JobPacket {
-        uint64_t taskId;    // Unique identifier for the task
-        uint32_t vgsi;      // Vertex Group Size Index
-        std::vector<uint32_t> vertices; // Vertices included in the packet
-        std::vector<std::pair<uint32_t, uint32_t>> edges; // Edges included in the packet
+        unsigned long long taskId; // Unique identifier for the task
+        std::vector<uint32_t> vertices; // List of vertices
+        std::vector<std::pair<uint32_t, uint32_t>> edges; // List of edges (pairs of vertex IDs)
 
-        // Serialization
+        // Serialize the JobPacket to a string
         std::string serialize() const;
 
-        // Deserialization
+        // Deserialize a string to a JobPacket
         static JobPacket deserialize(const std::string& data);
     };
 
 }
 
-#endif // PEREGRINE_JOBPACKET_H
+#endif // JOBPACKET_H
