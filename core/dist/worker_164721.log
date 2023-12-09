@@ -221,9 +221,6 @@ Worker sent ready message for next job packet.
 Worker received message: terminate
 terminate called after throwing an instance of 'std::invalid_argument'
   what():  stoull
-/var/lib/slurm-llnl/slurmd/job164719/slurm_script: line 11: 14469 Aborted                 ./worker
+/var/lib/slurm-llnl/slurmd/job164721/slurm_script: line 11: 18342 Aborted                 ./worker
 Worker starting up...
 Worker sent initial ready message.
-slurmstepd-cs-cloud-01: error: *** JOB 164719 ON cs-cloud-01 CANCELLED AT 2023-12-08T20:31:38 DUE TO TIME LIMIT ***
-terminate called after throwing an instance of 'zmq::error_t'
-  what():  Interrupted system call
