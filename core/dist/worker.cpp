@@ -4,6 +4,8 @@
 #include <iostream>
 #include <csignal>
 #include <string>
+#include <queue>
+#include <unordered_set>
 
 volatile sig_atomic_t terminate_flag = 0; // Flag for graceful shutdown
 
