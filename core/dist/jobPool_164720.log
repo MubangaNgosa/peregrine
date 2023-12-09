@@ -1,0 +1,443 @@
+DataGraph initialized from ../../data/citeseer
+Creating job packets...
+Finished creating 109 job packets.
+jobPool is ready, listening on ports 5555 and 5556.
+Received message: Ready
+Worker 1 is ready.
+Sent job packet 1 to worker 1
+Received message: Ready
+Worker 2 is ready.
+Sent job packet 2 to worker 2
+Received message: Ready
+Worker 3 is ready.
+Sent job packet 3 to worker 3
+Received message: Ready
+Worker 4 is ready.
+Sent job packet 4 to worker 4
+Received message: Ready
+Worker 5 is ready.
+Sent job packet 5 to worker 5
+Received message: Ready
+Worker 6 is ready.
+Sent job packet 6 to worker 6
+Received message: Ready
+Worker 7 is ready.
+Sent job packet 7 to worker 7
+Received message: Ready
+Worker 8 is ready.
+Sent job packet 8 to worker 8
+Received message: Ready
+Worker 9 is ready.
+Sent job packet 9 to worker 9
+Received message: Ready
+Worker 10 is ready.
+Sent job packet 10 to worker 10
+Received message: Ready
+Worker 11 is ready.
+Sent job packet 11 to worker 11
+Received message: Ready
+Worker 12 is ready.
+Sent job packet 12 to worker 12
+Received message: Ready
+Worker 13 is ready.
+Sent job packet 13 to worker 13
+Received message: Ready
+Worker 14 is ready.
+Sent job packet 14 to worker 14
+Received message: Ready
+Worker 15 is ready.
+Sent job packet 15 to worker 15
+Received message: Ready
+Worker 16 is ready.
+Sent job packet 16 to worker 16
+Received message: Ready
+Worker 17 is ready.
+Sent job packet 17 to worker 17
+Received message: Ready
+Worker 18 is ready.
+Sent job packet 18 to worker 18
+Received message: Ready
+Worker 19 is ready.
+Sent job packet 19 to worker 19
+Received message: Ready
+Worker 20 is ready.
+Sent job packet 20 to worker 20
+Received message: Ready
+Worker 21 is ready.
+Sent job packet 21 to worker 21
+Received message: Ready
+Worker 22 is ready.
+Sent job packet 22 to worker 22
+Received message: Ready
+Worker 23 is ready.
+Sent job packet 23 to worker 23
+Received message: Ready
+Worker 24 is ready.
+Sent job packet 24 to worker 24
+Received message: Ready
+Worker 25 is ready.
+Sent job packet 25 to worker 25
+Received message: Ready
+Worker 26 is ready.
+Sent job packet 26 to worker 26
+Received message: Ready
+Worker 27 is ready.
+Sent job packet 27 to worker 27
+Received message: Ready
+Worker 28 is ready.
+Sent job packet 28 to worker 28
+Received message: Ready
+Worker 29 is ready.
+Sent job packet 29 to worker 29
+Received message: Ready
+Worker 30 is ready.
+Sent job packet 30 to worker 30
+Received message: Ready
+Worker 31 is ready.
+Sent job packet 31 to worker 31
+Received message: Ready
+Worker 32 is ready.
+Sent job packet 32 to worker 32
+Received message: Ready
+Worker 33 is ready.
+Sent job packet 33 to worker 33
+Received message: Ready
+Worker 34 is ready.
+Sent job packet 34 to worker 34
+Received message: Ready
+Worker 35 is ready.
+Sent job packet 35 to worker 35
+Received message: Ready
+Worker 36 is ready.
+Sent job packet 36 to worker 36
+Received message: Ready
+Worker 37 is ready.
+Sent job packet 37 to worker 37
+Received message: Ready
+Worker 38 is ready.
+Sent job packet 38 to worker 38
+Received message: Ready
+Worker 39 is ready.
+Sent job packet 39 to worker 39
+Received message: Ready
+Worker 40 is ready.
+Sent job packet 40 to worker 40
+Received message: Ready
+Worker 41 is ready.
+Sent job packet 41 to worker 41
+Received message: Ready
+Worker 42 is ready.
+Sent job packet 42 to worker 42
+Received message: Ready
+Worker 43 is ready.
+Sent job packet 43 to worker 43
+Received message: Ready
+Worker 44 is ready.
+Sent job packet 44 to worker 44
+Received message: Ready
+Worker 45 is ready.
+Sent job packet 45 to worker 45
+Received message: Ready
+Worker 46 is ready.
+Sent job packet 46 to worker 46
+Received message: Ready
+Worker 47 is ready.
+Sent job packet 47 to worker 47
+Received message: Ready
+Worker 48 is ready.
+Sent job packet 48 to worker 48
+Received message: Ready
+Worker 49 is ready.
+Sent job packet 49 to worker 49
+Received message: Ready
+Worker 50 is ready.
+Sent job packet 50 to worker 50
+Received message: Ready
+Worker 51 is ready.
+Sent job packet 51 to worker 51
+Received message: Ready
+Worker 52 is ready.
+Sent job packet 52 to worker 52
+Received message: Ready
+Worker 53 is ready.
+Sent job packet 53 to worker 53
+Received message: Ready
+Worker 54 is ready.
+Sent job packet 54 to worker 54
+Received message: Ready
+Worker 55 is ready.
+Sent job packet 55 to worker 55
+Received message: Ready
+Worker 56 is ready.
+Sent job packet 56 to worker 56
+Received message: Ready
+Worker 57 is ready.
+Sent job packet 57 to worker 57
+Received message: Ready
+Worker 58 is ready.
+Sent job packet 58 to worker 58
+Received message: Ready
+Worker 59 is ready.
+Sent job packet 59 to worker 59
+Received message: Ready
+Worker 60 is ready.
+Sent job packet 60 to worker 60
+Received message: Ready
+Worker 61 is ready.
+Sent job packet 61 to worker 61
+Received message: Ready
+Worker 62 is ready.
+Sent job packet 62 to worker 62
+Received message: Ready
+Worker 63 is ready.
+Sent job packet 63 to worker 63
+Received message: Ready
+Worker 64 is ready.
+Sent job packet 64 to worker 64
+Received message: Ready
+Worker 65 is ready.
+Sent job packet 65 to worker 65
+Received message: Ready
+Worker 66 is ready.
+Sent job packet 66 to worker 66
+Received message: Ready
+Worker 67 is ready.
+Sent job packet 67 to worker 67
+Received message: Ready
+Worker 68 is ready.
+Sent job packet 68 to worker 68
+Received message: Ready
+Worker 69 is ready.
+Sent job packet 69 to worker 69
+Received message: Ready
+Worker 70 is ready.
+Sent job packet 70 to worker 70
+Received message: Ready
+Worker 71 is ready.
+Sent job packet 71 to worker 71
+Received message: Ready
+Worker 72 is ready.
+Sent job packet 72 to worker 72
+Received message: Ready
+Worker 73 is ready.
+Sent job packet 73 to worker 73
+Received message: Ready
+Worker 74 is ready.
+Sent job packet 74 to worker 74
+Received message: Ready
+Worker 75 is ready.
+Sent job packet 75 to worker 75
+Received message: Ready
+Worker 76 is ready.
+Sent job packet 76 to worker 76
+Received message: Ready
+Worker 77 is ready.
+Sent job packet 77 to worker 77
+Received message: Ready
+Worker 78 is ready.
+Sent job packet 78 to worker 78
+Received message: Ready
+Worker 79 is ready.
+Sent job packet 79 to worker 79
+Received message: Ready
+Worker 80 is ready.
+Sent job packet 80 to worker 80
+Received message: Ready
+Worker 81 is ready.
+Sent job packet 81 to worker 81
+Received message: Ready
+Worker 82 is ready.
+Sent job packet 82 to worker 82
+Received message: Ready
+Worker 83 is ready.
+Sent job packet 83 to worker 83
+Received message: Ready
+Worker 84 is ready.
+Sent job packet 84 to worker 84
+Received message: Ready
+Worker 85 is ready.
+Sent job packet 85 to worker 85
+Received message: Ready
+Worker 86 is ready.
+Sent job packet 86 to worker 86
+Received message: Ready
+Worker 87 is ready.
+Sent job packet 87 to worker 87
+Received message: Ready
+Worker 88 is ready.
+Sent job packet 88 to worker 88
+Received message: Ready
+Worker 89 is ready.
+Sent job packet 89 to worker 89
+Received message: Ready
+Worker 90 is ready.
+Sent job packet 90 to worker 90
+Received message: Ready
+Worker 91 is ready.
+Sent job packet 91 to worker 91
+Received message: Ready
+Worker 92 is ready.
+Sent job packet 92 to worker 92
+Received message: Ready
+Worker 93 is ready.
+Sent job packet 93 to worker 93
+Received message: Ready
+Worker 94 is ready.
+Sent job packet 94 to worker 94
+Received message: Ready
+Worker 95 is ready.
+Sent job packet 95 to worker 95
+Received message: Ready
+Worker 96 is ready.
+Sent job packet 96 to worker 96
+Received message: Ready
+Worker 97 is ready.
+Sent job packet 97 to worker 97
+Received message: Ready
+Worker 98 is ready.
+Sent job packet 98 to worker 98
+Received message: Ready
+Worker 99 is ready.
+Sent job packet 99 to worker 99
+Received message: Ready
+Worker 100 is ready.
+Sent job packet 100 to worker 100
+Received message: Ready
+Worker 101 is ready.
+Sent job packet 101 to worker 101
+Received message: Ready
+Worker 102 is ready.
+Sent job packet 102 to worker 102
+Received message: Ready
+Worker 103 is ready.
+Sent job packet 103 to worker 103
+Received message: Ready
+Worker 104 is ready.
+Sent job packet 104 to worker 104
+Received message: Ready
+Worker 105 is ready.
+Sent job packet 105 to worker 105
+Received message: Ready
+Worker 106 is ready.
+Sent job packet 106 to worker 106
+Received message: Ready
+Worker 107 is ready.
+Sent job packet 107 to worker 107
+Received message: Ready
+Worker 108 is ready.
+Sent job packet 108 to worker 108
+Received message: Ready
+Worker 109 is ready.
+Sent job packet 109 to worker 109
+Sent termination signal to worker 109
+Sent termination signal to worker 108
+Sent termination signal to worker 107
+Sent termination signal to worker 106
+Sent termination signal to worker 105
+Sent termination signal to worker 104
+Sent termination signal to worker 103
+Sent termination signal to worker 102
+Sent termination signal to worker 101
+Sent termination signal to worker 100
+Sent termination signal to worker 99
+Sent termination signal to worker 98
+Sent termination signal to worker 97
+Sent termination signal to worker 96
+Sent termination signal to worker 95
+Sent termination signal to worker 94
+Sent termination signal to worker 93
+Sent termination signal to worker 92
+Sent termination signal to worker 91
+Sent termination signal to worker 90
+Sent termination signal to worker 89
+Sent termination signal to worker 88
+Sent termination signal to worker 87
+Sent termination signal to worker 86
+Sent termination signal to worker 85
+Sent termination signal to worker 84
+Sent termination signal to worker 83
+Sent termination signal to worker 82
+Sent termination signal to worker 81
+Sent termination signal to worker 80
+Sent termination signal to worker 79
+Sent termination signal to worker 78
+Sent termination signal to worker 77
+Sent termination signal to worker 76
+Sent termination signal to worker 75
+Sent termination signal to worker 74
+Sent termination signal to worker 73
+Sent termination signal to worker 72
+Sent termination signal to worker 71
+Sent termination signal to worker 70
+Sent termination signal to worker 69
+Sent termination signal to worker 68
+Sent termination signal to worker 67
+Sent termination signal to worker 66
+Sent termination signal to worker 65
+Sent termination signal to worker 64
+Sent termination signal to worker 63
+Sent termination signal to worker 62
+Sent termination signal to worker 61
+Sent termination signal to worker 60
+Sent termination signal to worker 29
+Sent termination signal to worker 28
+Sent termination signal to worker 27
+Sent termination signal to worker 26
+Sent termination signal to worker 25
+Sent termination signal to worker 24
+Sent termination signal to worker 23
+Sent termination signal to worker 22
+Sent termination signal to worker 21
+Sent termination signal to worker 20
+Sent termination signal to worker 19
+Sent termination signal to worker 18
+Sent termination signal to worker 17
+Sent termination signal to worker 16
+Sent termination signal to worker 15
+Sent termination signal to worker 14
+Sent termination signal to worker 1
+Sent termination signal to worker 2
+Sent termination signal to worker 3
+Sent termination signal to worker 4
+Sent termination signal to worker 5
+Sent termination signal to worker 6
+Sent termination signal to worker 7
+Sent termination signal to worker 8
+Sent termination signal to worker 9
+Sent termination signal to worker 10
+Sent termination signal to worker 11
+Sent termination signal to worker 12
+Sent termination signal to worker 13
+Sent termination signal to worker 30
+Sent termination signal to worker 31
+Sent termination signal to worker 32
+Sent termination signal to worker 33
+Sent termination signal to worker 34
+Sent termination signal to worker 35
+Sent termination signal to worker 36
+Sent termination signal to worker 37
+Sent termination signal to worker 38
+Sent termination signal to worker 39
+Sent termination signal to worker 40
+Sent termination signal to worker 41
+Sent termination signal to worker 42
+Sent termination signal to worker 43
+Sent termination signal to worker 44
+Sent termination signal to worker 45
+Sent termination signal to worker 46
+Sent termination signal to worker 47
+Sent termination signal to worker 48
+Sent termination signal to worker 49
+Sent termination signal to worker 50
+Sent termination signal to worker 51
+Sent termination signal to worker 52
+Sent termination signal to worker 53
+Sent termination signal to worker 54
+Sent termination signal to worker 55
+Sent termination signal to worker 56
+Sent termination signal to worker 57
+Sent termination signal to worker 58
+Sent termination signal to worker 59
+jobPool terminating.
+/var/lib/slurm-llnl/slurmd/job164720/slurm_script: line 12: unexpected EOF while looking for matching ``'
+/var/lib/slurm-llnl/slurmd/job164720/slurm_script: line 13: syntax error: unexpected end of file
