@@ -1,0 +1,5 @@
+Worker starting up...
+Worker sent initial ready message.
+slurmstepd-cs-cloud-01: error: *** JOB 164711 ON cs-cloud-01 CANCELLED AT 2023-12-08T18:53:38 DUE TO TIME LIMIT ***
+terminate called after throwing an instance of 'zmq::error_t'
+  what():  Interrupted system call
