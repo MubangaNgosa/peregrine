@@ -6,10 +6,9 @@
 #SBATCH --mem=1GB                  # Memory
 #SBATCH --time=00:01:00            # Time limit hrs:min:sec
 #SBATCH --output=worker_%j.log    # Standard output and error log
+cd ../dist
 
 # Run worker
-.././worker
-.././worker
 .././worker
 .././worker
 .././worker
