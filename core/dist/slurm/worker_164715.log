@@ -1,0 +1,6 @@
+/var/lib/slurm-llnl/slurmd/job164715/slurm_script: line 9: cd: ../dist: No such file or directory
+Worker starting up...
+Worker sent initial ready message.
+slurmstepd-cs-cloud-01: error: *** JOB 164715 ON cs-cloud-01 CANCELLED AT 2023-12-08T19:12:08 DUE TO TIME LIMIT ***
+terminate called after throwing an instance of 'zmq::error_t'
+  what():  Interrupted system call
