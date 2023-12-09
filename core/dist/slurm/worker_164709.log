@@ -1,0 +1,7 @@
+.././worker: error while loading shared libraries: libtbb.so.2: cannot open shared object file: No such file or directory
+.././worker: error while loading shared libraries: libtbb.so.2: cannot open shared object file: No such file or directory
+.././worker: error while loading shared libraries: libtbb.so.2: cannot open shared object file: No such file or directory
+.././worker: error while loading shared libraries: libtbb.so.2: cannot open shared object file: No such file or directory
+.././worker: error while loading shared libraries: libtbb.so.2: cannot open shared object file: No such file or directory
+/var/lib/slurm-llnl/slurmd/job164709/slurm_script: line 16: unexpected EOF while looking for matching ``'
+/var/lib/slurm-llnl/slurmd/job164709/slurm_script: line 17: syntax error: unexpected end of file
